@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portofolio - Hanung Aryo Damar</title>
     <!-- Bootstrap CSS v5.3 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet"/>
+
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -46,6 +45,15 @@
     object-fit: cover;
     transform: translateY(-20%); /* Sesuaikan untuk memposisikan tengah gambar */
   }
+ 
+  .img-standard {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 0.375rem;
+  border-top-right-radius: 0.375rem;
+}
+
     </style>
   </head>
   <body>
@@ -87,10 +95,10 @@
       <div class="container text-center">
         <h3 class="mb-3">Tentang Saya</h3>
         <p class="lead">
-          Saya Mahasiswa Universitas Teknologi Digital Indonesia.
-          Saya antusias membuat antarmuka yang menarik dan mudah digunakan.
-          Saya menguasai HTML, CSS, PHP dasar, Microsoft Office, dan software desain.
-          Saya juga aktif dalam organisasi untuk mengembangkan kepemimpinan dan kerja tim.
+          Saya adalah seorang mahasiswa Informatika yang memiliki minat besar dalam bidang front-end development.
+          Saya aktif mempelajari berbagai teknologi seperti HTML5, CSS3, JavaScript, serta framework seperti Bootstrap, baik melalui perkuliahan maupun proyek pribadi.
+          Bagi saya, front-end development bukan hanya tentang menulis kode, tetapi juga menciptakan pengalaman pengguna yang menyenangkan.
+          Dengan semangat belajar dan komitmen untuk terus berkembang, saya siap mengembangkan potensi di dunia pengembangan web modern.
         </p>
       </div>
     </section>
@@ -126,83 +134,115 @@
 
 
     <!-- Tools -->
-    <section id="tools" class="bg-light py-5">
+<section id="tools" class="bg-light py-5">
   <div class="container">
     <h3 class="text-center mb-4">Tools</h3>
-    <div class="row g-4">
-      <div class="col-md-6">
-        <div class="skill-card">
-          <h4>Development Tools</h4>
-          <ul>
-            <li>Visual Studio Code</li>
-            <li>XAMPP</li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="skill-card">
-          <h4>Version Control</h4>
-          <ul>
-            <li>Git</li>
-            <li>GitHub</li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="skill-card">
-          <h4>Design & UI</h4>
-          <ul>
-            <li>Figma</li>
-            <li>Canva</li>
-          </ul>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-10">
+        <div class="row row-cols-2 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card text-center p-3 shadow-sm h-100">
+              <img src="img/vscode.jpeg" alt="VS Code" class="mx-auto" style="width:60px; height:60px;">
+              <div class="card-body">
+                <h6 class="card-title">Visual Studio Code</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card text-center p-3 shadow-sm h-100">
+              <img src="img/html.png" alt="XAMPP" class="mx-auto" style="width:60px; height:60px;">
+              <div class="card-body">
+                <h6 class="card-title">HTML</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card text-center p-3 shadow-sm h-100">
+              <img src="img/css.png" alt="Git" class="mx-auto" style="width:60px; height:60px;">
+              <div class="card-body">
+                <h6 class="card-title">CSS</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card text-center p-3 shadow-sm h-100">
+              <img src="img/github.png" alt="GitHub" class="mx-auto" style="width:60px; height:60px;">
+              <div class="card-body">
+                <h6 class="card-title">GitHub</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card text-center p-3 shadow-sm h-100">
+              <img src="img/figma.png" alt="Figma" class="mx-auto" style="width:60px; height:60px;">
+              <div class="card-body">
+                <h6 class="card-title">Figma</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card text-center p-3 shadow-sm h-100">
+              <img src="img/canva.jpeg" alt="Canva" class="mx-auto" style="width:60px; height:60px;">
+              <div class="card-body">
+                <h6 class="card-title">Canva</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card text-center p-3 shadow-sm h-100">
+              <img src="img/js.jpeg" alt="Canva" class="mx-auto" style="width:60px; height:60px;">
+              <div class="card-body">
+                <h6 class="card-title">JavaScript</h6>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-    <!-- Project -->
-<section id="project" class="py-5 bg-white">
+
+
+   <!-- Project -->
+<section id="project" class="bg-light py-5">
   <div class="container">
-    <h3 class="text-center mb-4">Project</h3>
+    <h3 class="fw-bold text-center mb-4">Project</h3>
     <div class="row g-4">
-
-      <!-- Project 1 -->
       <div class="col-md-6">
-        <a href="https://link-ke-liputan.com" target="_blank" class="text-decoration-none text-dark">
-          <div class="card h-100 shadow-sm">
-            <img src="img/project1.png" alt="Sistem Permohonan Liputan" class="card-img-top img-fluid rounded-top">
+        <a href="#" target="_blank" class="text-decoration-none">
+          <div class="card hover-card">
+            <img src="img/project1.png" class="img-standard" alt="Sistem Permohonan Liputan">
             <div class="card-body">
-              <h5 class="card-title">Sistem Permohonan Liputan</h5>
-              <p class="card-text">Website untuk registrasi permohonan liputan.</p>
-              <p class="text-muted"><em>Teknologi: HTML, CSS, Bootstrap, PHP, MySQL</em></p>
+              <h5>Sistem Permohonan Liputan</h5>
+              <p>Sistem ini dirancang untuk mempermudah pendaftaran permohonan liputan di Balai Tekkomdik DIY</p>
             </div>
           </div>
         </a>
       </div>
-
-      <!-- Project 2 -->
       <div class="col-md-6">
-        <a href="https://link-ke-ecommerce.com" target="_blank" class="text-decoration-none text-dark">
-          <div class="card h-100 shadow-sm">
-            <img src="img/project2.png" alt="E-commerce Fashion" class="card-img-top img-fluid rounded-top">
+        <a href="#" target="_blank" class="text-decoration-none">
+          <div class="card hover-card">
+            <img src="img/project2.png" class="img-standard" alt="E-Commerce Fashion">
             <div class="card-body">
-              <h5 class="card-title">E-commerce Fashion</h5>
-              <p class="card-text">Website e-commerce untuk fashion dengan fitur katalog produk.</p>
-              <p class="text-muted"><em>Teknologi: HTML, CSS, PHP, MySQL</em></p>
+              <h5>E-Commerce Fashion</h5>
+              <p>Sistem ini dirancang untuk mempermudah jual beli fashion dan memperkenalkan produk yang sudah ada</p>
             </div>
           </div>
         </a>
       </div>
-
-      <!-- Project 3 -->
       <div class="col-md-6">
-        <div class="card h-100 shadow-sm">
-          <img src="img/project3.png" alt="Sistem Informasi Kosmetik" class="card-img-top img-fluid rounded-top enlarge-img" style="cursor: zoom-in;">
+        <div class="card hover-card">
+          <img src="img/project3.png" class="img-standard project-img" alt="Sistem Informasi Kosmetik" data-bs-toggle="modal" data-bs-target="#modalProject3">
           <div class="card-body">
-            <h5 class="card-title">Sistem Informasi Kosmetik</h5>
-            <p class="card-text">Desain antarmuka sistem informasi berbasis Figma untuk informasi kosmetik.</p>
-            <p class="text-muted"><em>Desain Antarmuka: Figma</em></p>
+            <h5>Sistem Informasi Kosmetik</h5>
+            <p>Sistem ini dirancang untuk memberikan informasi terkait kosmetik</p>
           </div>
         </div>
       </div>
@@ -210,7 +250,16 @@
   </div>
 </section>
 
-
+<!-- Modal Figma Project -->
+<div class="modal fade" id="modalProject3" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body p-0">
+        <img src="img/project3.png" class="img-fluid rounded" alt="HARF Beauty Figma">
+      </div>
+    </div>
+  </div>
+</div>
 
     <!-- Sertifikasi -->
     <section id="sertifikasi" class="py-5 bg-light">
@@ -304,22 +353,32 @@
       </div>
     </section>
 
-    <!-- Kontak -->
-    <section id="contact" class="bg-light py-5">
-      <div class="container">
-        <h3 class="text-center mb-4">Kontak</h3>
-        <div class="row text-center">
-          <div class="col-md-4">
-            <h4>Email</h4>
-            <p>hanung.aryo@students.utdi.ac.id</p>
-          </div>
-          <div class="col-md-4">
-            <h4>Telepon</h4>
-            <p>089673531333</p>
-          </div>
-        </div>
+   <!-- Kontak -->
+<section id="contact" class="bg-light py-5">
+  <div class="container">
+    <h3 class="text-center mb-4">Kontak</h3>
+    <div class="row text-center justify-content-center">
+      <div class="col-md-4">
+        <a href="mailto:hanung.aryo@students.utdi.ac.id" class="text-decoration-none text-dark">
+          <i class="fa-solid fa-envelope" style="font-size: 2rem;"></i>
+          <p class="mt-2">hanung.aryo@students.utdi.ac.id</p>
+        </a>
       </div>
-    </section>
+      <div class="col-md-4">
+        <a href="https://wa.me/6289673531333" target="_blank" class="text-decoration-none text-dark">
+          <i class="fa-brands fa-whatsapp" style="font-size: 2rem;"></i>
+          <p class="mt-2">0896-7353-1333</p>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="https://www.linkedin.com/in/hanung-aryo-359a7524a/" target="_blank" class="text-decoration-none text-dark">
+          <i class="fa-brands fa-linkedin" style="font-size: 2rem;"></i>
+          <p class="mt-2">Hanung Aryo</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
